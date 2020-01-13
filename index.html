@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container, .container1{
+            display: flex;
+        }
+        [class*="c-"]{
+            width: 270px;
+            height: 270px;
+            overflow: hidden;
+        }
+        .c-1 img{
+            opacity: 1;
+            transition: 1s opacity;
+        }
+        .c-1:hover img{
+            opacity: 0.2;
+        }
+        .c-2 img{
+            transform: translateX(-270px);
+            opacity: 1;
+            transition: 1s opacity;
+        }
+        .c-2:hover img{
+            opacity: 0.2;
+        }
+        .c-3 img{
+            transform: translateX(-540px);
+            opacity: 1;
+            transition: 1s opacity;
+        }
+        .c-3:hover img{
+            opacity: 0.2;
+        }
+        .c-4 img{
+            transform: translateY(-270px);
+            opacity: 1;
+            transition: 1s opacity;
+        }
+        .c-4:hover img{
+            opacity: 0.2;
+        }
+        .c-5 img{
+            transform: translate(-270px, -270px);
+            opacity: 1;
+            transition: 1s opacity;
+        }
+        .c-5:hover img{
+            opacity: 0.2;
+        }
+        .c-6 img{
+            transform: translate(-540px, -270px);
+            opacity: 1;
+            transition: 1s opacity;
+        }
+        .c-6:hover img{
+            opacity: 0.2;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="c-1">
+        <img src="img/810x540.jpg" alt="">
+    </div>
+    <div class="c-2">
+        <img src="img/810x540.jpg" alt="">
+    </div>
+    <div class="c-3">
+        <img src="img/810x540.jpg" alt="">
+    </div>
+    </div>
+    <div class="container1">
+    <div class="c-4">
+        <img src="img/810x540.jpg" alt="">
+    </div>
+    <div class="c-5">
+        <img src="img/810x540.jpg" alt="">
+    </div>
+    <div class="c-6">
+        <img src="img/810x540.jpg" alt="">
+    </div>
+    </div>
+</body>
+</html>
